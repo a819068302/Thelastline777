@@ -10,12 +10,22 @@ export default new Router({
     {
       path:'li',
       name:'li',
-      component: () => import(/* webpackChunkName: "comingsoon" */ '@/components/li/li.vue')  //路由懒加载
+      component: () => import(/* webpackChunkName: "li" */ '@/components/li/li.vue')  //路由懒加载
     },
     {
-      path:'comimgsoon',
-          name:'comingsoon',
-          component: () => import(/* webpackChunkName: "comingsoon" */ '@/components/zou/zou.vue')  //路由懒加载
+      path:'feng',
+          name:'feng',
+          component: () => import(/* webpackChunkName: "feng" */ '@/components/feng/feng.vue')  //路由懒加载
+    },
+	{
+      path:'zou',
+          name:'zou',
+          component: () => import(/* webpackChunkName: "zou" */ '@/components/zou/zou.vue')  //路由懒加载
+    },
+	{
+      path:'wang',
+          name:'wang',
+          component: () => import(/* webpackChunkName: "wang" */ '@/components/wang/wang.vue')  //路由懒加载
     }
   ]
 })
