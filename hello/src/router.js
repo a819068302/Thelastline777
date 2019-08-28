@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import wang from '@/components/wang/wang.vue' //引入组件
 
 Vue.use(Router)
 
@@ -8,22 +9,22 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path:'li',
+      path:'/li',
       name:'li',
       component: () => import(/* webpackChunkName: "li" */ '@/components/li/li.vue')  //路由懒加载
     },
     {
-      path:'feng',
+      path:'/feng',
           name:'feng',
           component: () => import(/* webpackChunkName: "feng" */ '@/components/feng/feng.vue')  //路由懒加载
     },
 	{
-      path:'zou',
+      path:'/zou',
           name:'zou',
           component: () => import(/* webpackChunkName: "zou" */ '@/components/zou/zou.vue')  //路由懒加载
     },
 	{
-      path:'wang',
+      path:'/wang',
           name:'wang',
           component: () => import(/* webpackChunkName: "wang" */ '@/components/wang/wang.vue')  //路由懒加载
     }

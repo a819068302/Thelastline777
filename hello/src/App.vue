@@ -7,7 +7,7 @@
         </router-link>
       </template>
     </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -39,6 +39,7 @@ export default {
     position: fixed;
     left: 0;
     right: 0;
+	top:0;
     height: 48px;
     border-top: 1px solid #d8d8d8;
     background: #fff;
